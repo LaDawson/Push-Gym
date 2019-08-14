@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Patua+One|Varela+Round&display=swap');
+
+
+/* NAV BAR */
+
+
+.navDefault {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    padding: 15px;
+}
+
+.ullist {
+    text-align: center;
+}
+
+.dropdownMenu {
+    padding: 0;
+    display: inline;
+}
+
+.dropdownMenu2 {
+    padding: 0;
+    display: inline;
+}
+
+ul {
+    list-style: none;
+    padding-left: 15px;
+    display: block;
+}
+
+.listitem {
+    margin-left: 15px;
+    display: inline;
+}
+
+.listitemlink {
+    padding: 0;
+    font-family: "Patua One", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #4a4a4f;
+    text-decoration: none;
+    display: inline;
+    transition: color .2s ease-in-out, font-size .2s ease-in-out;
+}
+
+.listicon {
+    margin-right: 5px;
+}
+
+
+.listitemlink:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+
+@media (max-width: 590px) {
+    .dropdownMenu {
+        display: block;
+        margin-bottom: 0;
+    }
+    .dropdownMenu2 {
+        display: block;
+    }
+    .navDefault {
+        left: 0;
+    }
+}
+
