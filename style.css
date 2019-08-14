@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Patua+One|Varela+Round&display=swap');
 
 
-/* NAV BAR */
+/* ------------------------NAV BAR-------------------------- */
 
 
 .navDefault {
@@ -72,4 +72,65 @@ ul {
         left: 0;
     }
 }
+
+/* ------------------------------Jumbotron--------------------------- */
+
+.callout-container {
+    height: 100vh;
+
+    background: url("https://cdn.pixabay.com/photo/2017/01/09/11/30/dumbbell-1966247_1280.jpg") no-repeat bottom right fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 100px;
+
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.divider-orange {
+    background-color: orange;
+    height: 1px;
+    width: 200px;
+}
+
+.statement {
+    color: #4a4a4f;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.sign-up-button {
+    background-color: orange;
+    border: none;
+    height: 45px;
+    width: 100px;
+    border-radius: 5%;
+    margin-top: 10px;
+    z-index: 1;
+}
+
 
