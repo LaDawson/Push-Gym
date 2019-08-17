@@ -134,3 +134,113 @@ ul {
 }
 
 
+/* -------------------------------------CARDS PAGE 2-------------------------------- */
+
+.card {
+    width: 39.5%;
+    margin-left: 7%;
+    margin-top: 5%;
+    border: none;
+    background-color: #4a4a4f;
+    position: relative;
+    float: left;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        width: 80%;
+        float: none;
+        margin-left: 10%;
+    }
+}
+
+.cardtext {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    padding: 20% 3%;
+    font-size: 200%;
+    font-family: "Anton", sans-serif;
+    color: transparent;
+}
+
+
+
+.cardimagetitle {
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 5%;
+    right: 5%;
+    font-size: 4vw;
+    font-family: "Anton", sans-serif;
+    color: #4a4a4f;
+}
+
+.cardimage {
+    width: 100%;
+    border: 3px solid orange;
+    box-shadow: 10px 13px;
+}
+
+.page2 {
+    background-color: #4a4a4f;
+    position: absolute;
+}
+
+.navDefault2 {
+    right: 0;
+    position: absolute;
+    background-color: transparent;
+    z-index: 1;
+    padding: 5%;
+    top: 100%;
+}
+
+.listitemlink2 {
+    padding: 0;
+    font-family: "Patua One", sans-serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    display: inline;
+    transition: color .2s ease-in-out, font-size .2s ease-in-out;
+}
+
+.listitemlink2:hover {
+    text-decoration: none;
+    color: orange;
+}
+
+.pagedivider {
+    background-color: black;
+    height: 1%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divider-page {
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+.page2title {
+    color: white;
+    font-weight: bold;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.divider-black {
+    background-color: black;
+    height: 1px;
+    width: 150px;
+}
