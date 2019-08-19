@@ -143,8 +143,10 @@ button {
     margin-top: 5%;
     border: none;
     background-color: #4a4a4f;
+    /* float: left; */
+    display: inline-block;
     position: relative;
-    float: left;
+    margin-bottom: 10%;
 }
 
 @media (max-width: 1000px) {
@@ -160,11 +162,11 @@ button {
 .cardtext {
     text-align: center;
     text-decoration: none;
-    position: absolute;
     padding: 20% 3%;
     font-size: 2vw;
     font-family: "Anton", sans-serif;
     color: transparent;
+    position: absolute;
 }
 
 @media (max-width: 1000px) {
@@ -200,7 +202,6 @@ button {
 
 .page2 {
     background-color: #4a4a4f;
-    position: absolute;
     display: block;
 }
 
@@ -315,11 +316,11 @@ button {
 
 .page4 {
        background-color: black;
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 150%;
+       display: block;
+       width: 100%;
+       position: relative;
+       padding: 0;
+       margin: 0;
 }
 
 .pagedivider2 {
@@ -337,6 +338,25 @@ button {
     width: 100%;
     background-color: black;
 }
+
+.quotes {
+    height: 400px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------FORM -------------- */
