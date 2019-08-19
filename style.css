@@ -129,6 +129,9 @@ button {
     border-radius: 5%;
     margin-top: 10px;
     z-index: 1;
+    color: black;
+    font-family: "Patua One", sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -152,17 +155,23 @@ button {
     }
 }
 
+
+
 .cardtext {
     text-align: center;
     text-decoration: none;
     position: absolute;
     padding: 20% 3%;
-    font-size: 200%;
+    font-size: 2vw;
     font-family: "Anton", sans-serif;
     color: transparent;
 }
 
-
+@media (max-width: 1000px) {
+    .cardtext {
+        font-size: 4vw;
+    }
+}
 
 .cardimagetitle {
     text-align: center;
@@ -192,6 +201,7 @@ button {
 .page2 {
     background-color: #4a4a4f;
     position: absolute;
+    display: block;
 }
 
 .listitemlink2 {
@@ -288,3 +298,77 @@ button {
     color: orange;
     z-index: 2;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE 4 */
+
+.page4 {
+       background-color: black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 150%;
+}
+
+.pagedivider2 {
+    background-color: black;
+    height: 1%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.divider-page2 {
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+
+/* ------------FORM -------------- */
+
+contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-top: 4%;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
+}
+
+@media(min-width: 992px) {
+    .center-form {
+    padding-top: 30px;
+    min-height: 240px;
+    margin: 0 auto;
+    max-width: 50%;
+}
+}
+
+
