@@ -5,73 +5,71 @@
 
 
 .navDefault {
-    top: 0;
+       top: 0;
     right: 0;
-    position: absolute;
+    position: fixed;
     background-color: transparent;
     z-index: 1;
     padding: 15px;
 }
 
-.ullist {
-    text-align: center;
+button {
+       border: none;
+    background-color: transparent;
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .2s ease-in-out;
 }
 
 .dropdownMenu {
+       list-style: none;
+    margin: 0;
+    position: absolute;
     padding: 0;
-    display: inline;
+    top: 50px;
+    width: 100px;
+    z-index: -1;
+    text-align: center;
+    transition: background-color .6s ease-in-out, transform .2s ease-in-out;;
+    transform: translateX(150%);
 }
-
-.dropdownMenu2 {
-    padding: 0;
-    display: inline;
-}
-
-ul {
-    list-style: none;
-    padding-left: 15px;
+.dropdownLink {
+    text-decoration: none;
     display: block;
+    background-color: transparent;
+    padding: 2px 2px;
+    color: white;
+    transition: color .2s ease-in-out;
+    font-family: "Patua One",sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px
 }
 
-.listitem {
-    margin-left: 15px;
-    display: inline;
-}
-
-.listitemlink {
-    padding: 0;
-    font-family: "Patua One", sans-serif;
-    letter-spacing: 2px;
-    font-size: 20px;
-    color: #4a4a4f;
+.dropdown:hover .dropdownLink {
     text-decoration: none;
-    display: inline;
-    transition: color .2s ease-in-out, font-size .2s ease-in-out;
-}
-
-.listicon {
-    margin-right: 5px;
 }
 
 
-.listitemlink:hover {
-    text-decoration: none;
+.dropdown:hover .dropdownMenu {
+    transform: translateX(0);
+}
+
+.dropdown {
+        width: 100px;
+    position: relative;
+}
+
+.dropdown:hover button {
+   color: orange;
+}
+
+.dropdownLink:hover {
     color: orange;
 }
 
 
-@media (max-width: 590px) {
-    .dropdownMenu {
-        display: block;
-        margin-bottom: 0;
-    }
-    .dropdownMenu2 {
-        display: block;
-    }
-    .navDefault {
-        left: 0;
-    }
-}
 
 /* ------------------------------Jumbotron--------------------------- */
 
@@ -181,20 +179,19 @@ ul {
     width: 100%;
     border: 3px solid orange;
     box-shadow: 10px 13px;
+    background-color: #4a4a4f;
+}
+
+.cardimage2 {
+    width: 100%;
+    border: 3px solid orange;
+    box-shadow: 10px 13px;
+    background-color: #4a4a4f;
 }
 
 .page2 {
     background-color: #4a4a4f;
     position: absolute;
-}
-
-.navDefault2 {
-    right: 0;
-    position: absolute;
-    background-color: transparent;
-    z-index: 1;
-    padding: 5%;
-    top: 100%;
 }
 
 .listitemlink2 {
@@ -243,4 +240,51 @@ ul {
     background-color: black;
     height: 1px;
     width: 150px;
+}
+
+
+.card:hover .opaque-overlay2 {
+    z-index: 1;
+}
+
+.card:hover .cardimagetitle {
+    color: transparent;
+}
+
+.card:hover .cardtext {
+    color: orange;
+    z-index: 2;
+}
+
+
+.opaque-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+.opaque-overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.card:hover .opaque-overlay3 {
+    z-index: 1;
+}
+
+.card:hover .cardimagetitle {
+    color: transparent;
+}
+
+.card:hover .cardtext {
+    color: orange;
+    z-index: 2;
 }
