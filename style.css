@@ -3,9 +3,8 @@
 
 /* ------------------------NAV BAR-------------------------- */
 
-
 .navDefault {
-       top: 0;
+    top: 0;
     right: 0;
     position: fixed;
     background-color: transparent;
@@ -13,8 +12,13 @@
     padding: 15px;
 }
 
+.dropdownItem {
+    padding-left: 2px;
+    margin: 0;
+}
+
 button {
-       border: none;
+    border: none;
     background-color: transparent;
     width: 100px;
     height: 50px;
@@ -24,7 +28,7 @@ button {
 }
 
 .dropdownMenu {
-       list-style: none;
+    list-style: none;
     margin: 0;
     position: absolute;
     padding: 0;
@@ -32,9 +36,10 @@ button {
     width: 100px;
     z-index: -1;
     text-align: center;
-    transition: background-color .6s ease-in-out, transform .2s ease-in-out;;
+    transition: background-color .2s ease-in-out, transform .2s ease-in-out, border .2s ease-in-out;
     transform: translateX(150%);
 }
+
 .dropdownLink {
     text-decoration: none;
     display: block;
@@ -42,7 +47,7 @@ button {
     padding: 2px 2px;
     color: white;
     transition: color .2s ease-in-out;
-    font-family: "Patua One",sans-serif;
+    font-family: "Patua One", sans-serif;
     font-size: 15px;
     letter-spacing: 2px
 }
@@ -54,19 +59,21 @@ button {
 
 .dropdown:hover .dropdownMenu {
     transform: translateX(0);
+    background-color: black;
+    border: 2px solid orange;
 }
 
 .dropdown {
-        width: 100px;
+    width: 100px;
     position: relative;
 }
 
 .dropdown:hover button {
-   color: orange;
+    color: orange;
 }
 
 .dropdownLink:hover {
-    color: orange;
+    color: #4a4a4f;
 }
 
 
@@ -143,7 +150,6 @@ button {
     margin-top: 5%;
     border: none;
     background-color: #4a4a4f;
-    /* float: left; */
     display: inline-block;
     position: relative;
     margin-bottom: 10%;
@@ -277,6 +283,7 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
 }
+
 .opaque-overlay3 {
     position: absolute;
     top: 0;
@@ -312,26 +319,26 @@ button {
 
 
 
-/* PAGE 4 */
+/* PAGE 3 */
 
-.page4 {
-       background-color: black;
-       display: block;
-       width: 100%;
-       position: relative;
-       padding: 0;
-       margin: 0;
+.page3 {
+    background: url("https://cdn.pixabay.com/photo/2016/12/04/22/15/fitness-1882721_1280.jpg") no-repeat bottom right fixed;
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
-.pagedivider2 {
-    background-color: black;
+.pagedivider3 {
+    background-color: orange;
     height: 1%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.divider-page2 {
+.divider-page3 {
     margin: 0;
     padding: 0;
     height: 10px;
@@ -341,10 +348,22 @@ button {
 
 .quotes {
     height: 400px;
-    background-color: #fff;
 }
 
+.page3title {
+    color: white;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+}
 
+.quotesdivider {
+    background-color: orange;
+    height: 1px;
+    width: 150px;
+}
 
 
 
@@ -384,11 +403,9 @@ button[type="submit"] {
 
 @media(min-width: 992px) {
     .center-form {
-    padding-top: 30px;
-    min-height: 240px;
-    margin: 0 auto;
-    max-width: 50%;
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
+    }
 }
-}
-
-
