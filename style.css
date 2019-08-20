@@ -322,7 +322,8 @@ button {
 /* PAGE 3 */
 
 .page3 {
-    background: url("https://cdn.pixabay.com/photo/2016/12/04/22/15/fitness-1882721_1280.jpg") no-repeat bottom right fixed;
+    background: url("https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839087_1280.jpg") no-repeat bottom right fixed;
+    background-size: cover;
     display: block;
     width: 100%;
     position: relative;
