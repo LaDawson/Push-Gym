@@ -25,7 +25,19 @@
     font-family: "Anton", sans-serif;
     letter-spacing: 1px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.price2 {
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    font-size: 3vw;
+    margin: 8% 2%;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .dropdownItem {
@@ -405,10 +417,7 @@ button {
 
 .quotecontainer2 {
     width: 40%;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto;
     background-color: rgba(0, 0, 0, 0.7);
     border: 3px solid orange;
 }
@@ -501,7 +510,7 @@ button {
     margin-top: 80px;
     padding-bottom: 100px;
     outline: none;
-    font-family: "Patua One",sans-serif;
+    font-family: "Patua One", sans-serif;
     color: white;
 }
 
@@ -513,7 +522,7 @@ input {
 
 textarea {
     outline: none;
-    border:none;
+    border: none;
 }
 
 .contactbars {
@@ -538,7 +547,6 @@ textarea {
 
 .submitbutton {
     background-color: black;
-    border: none;
     height: 45px;
     width: 100px;
     border-radius: 4px;
@@ -562,9 +570,11 @@ textarea {
     background-color: black;
     height: 100vh;
 }
+
 .pages5 {
     background-color: black;
 }
+
 .textbox {
     text-align: center;
     width: 80%;
@@ -573,7 +583,7 @@ textarea {
 }
 
 .tbp {
-       font-family: "Anton",sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 6vw;
     margin-top: 60px;
     margin-bottom: 0;
@@ -581,8 +591,9 @@ textarea {
     color: orange;
     width: 100%;
 }
+
 .tbp2 {
-     font-family: "Anton",sans-serif;
+    font-family: "Anton", sans-serif;
     font-size: 6vw;
     margin: 0;
     padding: 0;
@@ -591,19 +602,19 @@ textarea {
 }
 
 .tbheader {
-        font-family: "Anton",sans-serif;
+    font-family: "Anton", sans-serif;
     color: white;
     font-size: 10vw;
     margin-bottom: 40px;
 }
 
 .divider-page5 {
-        margin: 0 auto;
+    margin: 0 auto;
     padding: 0;
     height: 5px;
     width: 60%;
     background-color: #4a4a4f;
-    
+
 }
 
 .dropdownLink2 {
@@ -614,17 +625,12 @@ textarea {
     color: white;
     transition: color .2s ease-in-out;
     font-family: "Patua One", sans-serif;
-    font-size: 30px;
     letter-spacing: 2px;
     margin-top: 50px;
-    font-size: 29px;
+    font-size: 30px;
 }
 
 .dropdownLink2:hover {
     color: #4a4a4f;
     text-decoration: none;
 }
-
-
-
-
